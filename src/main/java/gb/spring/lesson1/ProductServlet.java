@@ -26,6 +26,5 @@ public class ProductServlet extends HttpServlet {
         resp.getWriter().write("<h3>" + new Product(8, "Орех", 10) + "</h3>" + "\n");
         resp.getWriter().write("<h3>" + new Product(9, "Банан", 25) + "</h3>" + "\n");
         resp.getWriter().write("<h3>" + new Product(10, "Апельсин", 15) + "</h3>" + "\n");
-
     }
 }
