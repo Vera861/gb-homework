@@ -13,5 +13,5 @@ public class Product {
 
     private Long id;
     private String title;
-    private Integer coast;
+    private Integer price;
 }

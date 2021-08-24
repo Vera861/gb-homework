@@ -20,7 +20,7 @@ public class ProductRepository {
         productList.put(1l, Product.builder()
                 .id(1l)
                 .title("Asus EEE PC 1201n")
-                .coast(1250)
+                .price(1250)
                 .build());
     }
 
@@ -33,12 +33,5 @@ public class ProductRepository {
         return productList.values().stream()
                 .filter(it -> Objects.equals(it.getId(), id))
                 .findFirst();
-    }
-
-    public void save(Product product) {
-        if (product.getId() == null) {
-            product.setId(productList.size() + 1L);
-        }
-        productList.put(product.getId(), product);
     }
 }
